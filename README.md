@@ -1,7 +1,9 @@
-Stock Price Prediction Using Stacked LSTM Model
+Stock Price Prediction Using Stacked LSTM Model:
+
 This repository contains my project on stock price prediction using a deep learning approach with a Stacked Long Short-Term Memory (LSTM) model. The primary goal of this project was to predict the stock prices of a company based on its historical data and to analyze how well the model performs on training and testing datasets.
 
-📌 Overview
+📌 Overview:
+
 Stock price prediction is a challenging problem due to the inherent volatility and non-linear patterns in stock market data. Traditional models like ARIMA or simple machine learning models often fail to capture long-term dependencies in sequential data. That's where LSTMs excel, as they are specifically designed to handle such sequential data and can model both short-term and long-term dependencies effectively.
 
 In this project, I used a Stacked LSTM architecture, which involves multiple layers of LSTMs stacked on top of each other, to improve the model's capacity to learn complex patterns from the data.
