@@ -8,7 +8,8 @@ Stock price prediction is a challenging problem due to the inherent volatility a
 
 In this project, I used a Stacked LSTM architecture, which involves multiple layers of LSTMs stacked on top of each other, to improve the model's capacity to learn complex patterns from the data.
 
-🛠️ Features
+🛠️ Features:
+
 Train the Model:
 
 Select the company’s stock (e.g., AAPL, GOOGL) and specify the time range for training.
@@ -17,24 +18,29 @@ Save the trained model in the format StockSymbolStartDate_EndDate.keras.
 Load and Analyze the Model:
 
 Load a pre-trained model and visualize:
+
 Training Loss vs Validation Loss.
 Predictions on Training Data vs Test Data.
 Predict future stock prices for a user-specified number of days.
 
-📈 Technologies Used
+📈 Technologies Used:
+
 Python: Core programming language.
 TensorFlow/Keras: For building and training the deep learning model.
 yFinance: To fetch historical stock price data.
 Matplotlib: For visualizing predictions and performance metrics.
 scikit-learn: For data preprocessing and evaluation metrics.
 
-🔧 How to Run the Project
-Prerequisites
+🔧 How to Run the Project:
+
+Prerequisites:
+
 Ensure you have the following installed:
 
 Python 3.7 or above
 Required libraries: tensorflow, yfinance, scikit-learn, matplotlib, numpy
 Install all dependencies using:
+
 pip install -r requirements.txt
 
 Steps to Run
@@ -48,6 +54,7 @@ source env/bin/activate   # For macOS/Linux
 env\Scripts\activate      # For Windows
 
 🧠 Model Architecture
+
 The model consists of:
 
 Three LSTM Layers: Each layer has 50 units. The first two layers return sequences to pass them to the next LSTM layer.
@@ -61,14 +68,16 @@ The model captures the trends in stock prices well on both training and testing 
 Metrics like MSE, MAE, and R² Score are used to evaluate performance.
 Future Predictions:
 
-The app allows users to predict stock prices for the next n days and visualize the results.
-🌟 Future Work
+The model is able to predict the future prices efficiently but should not be used in real life situations due to the various external factors that affect the stock prices that could not be addressed by this model.
+🌟 Future Work:
+
 Incorporating Sentiment Analysis: Use financial news or social media data to enhance predictions.
 Adding Technical Indicators: Include features like RSI, MACD, and Bollinger Bands.
 Real-Time Predictions: Fetch live stock data and update predictions in real time.
 Hybrid Models: Experiment with combining LSTMs and Transformers for improved performance.
 
-🏷️ Acknowledgments
+🏷️ Acknowledgments:
+
 Special thanks to:
 OpenAI for ChatGPT, which helped refine certain aspects of my code and documentation.
 The creators of TensorFlow for making powerful tools available to developers.
